@@ -7,3 +7,4 @@ This repo is for PCB development
  - Use a 12V / 24V DC adapter to power the NPK Sensor.
  - Add the ModbusMaster library in Arduino IDE. The ModbusMaster library used is from Doc Walker. It can be directly downloaded to Arduino IDE from Library Manager or can be accessed from "https://github.com/4-20ma/ModbusMaster".
  - Upload the code from "NPK.ino"
+![alt text](Image/NPK_sensor_with_ESP32.jpg)
