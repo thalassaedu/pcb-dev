@@ -36,3 +36,9 @@ This repo is for PCB development
 - Connect the pH sensor PCB module as per the wiring scheme shown below.
 ![alt text](Image/ph_sensor_with_ESP32.jpg)
 - Upload the code from "pH_Sensor_with_ESP32.ino"
+
+## Using relay
+- Connect the circuit as per the wiring diagram shown below.
+![alt text](Image/Relay.jpg)
+- Instead of arduino, ESP32 can also be used. However make sure that the relay is powered accordingly from 5V source and check before applying the Mains supply.
+- Upload the code from "Relay.ino"
