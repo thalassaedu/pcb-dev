@@ -20,6 +20,17 @@ This repo is for PCB development
 ## Using TDS Sensor with ESP32
 - Connect the TDS Sensor with ESP32 as shown in the figure below.
 ![alt text](Image/TDS_sensor_with_ESP.jpg)
-- First we need to calibrate the sensor. Ensure that the sensor is completely dry.
 - Upload the code from TDS_with_ESP32.ino
+- Calibrate the temperature.
 - Select the baud rate as 115200 in the Arduino IDE.
+
+## Using pH Sensor with ESP32
+- First we need to calibrate the PCB module of the pH sensor.
+- Connect the BNC pins to each other as shown in the figure below.
+![alt text](Image/PH_configure_1.jpg)
+- Connect the PCB module with Arduino as shown as per the wiring scheme shown below.
+![alt text](Image/PH_configure_2.jpg)
+- Upload the code from pH_calibration.ino
+- Open the serial monitor and check the voltage. If you get 2.5V, then the PCB module is working perfectly. However, if you are receiving any other value, then use the potentiometer which is located above the BNC to get a proper result of 2.5V.
+- Once the PCB module is calibrated, then remove the wire from the BNC connector and connect the pH sensor probe.
+- Connect the pH sensor PCB module as per the wiring scheme shown below.
