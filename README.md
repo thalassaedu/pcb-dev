@@ -42,3 +42,10 @@ This repo is for PCB development
 ![alt text](Image/Relay.jpg)
 - Instead of arduino, ESP32 can also be used. However make sure that the relay is powered accordingly from 5V source and check before applying the Mains supply.
 - Upload the code from "Relay.ino"
+
+## LED dimmer (Under progress, do not use)
+- Two options -
+    1. Using a 555 timer IC to generate a square wave along with a potentiometer that will vary the duty cycle (PWM). However, requires manual setting.
+    2. Using the digital PWM pins to somehow control the dimmer.
+
+### Using 2.:
