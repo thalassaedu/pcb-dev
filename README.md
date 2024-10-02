@@ -49,3 +49,6 @@ This repo is for PCB development
     2. Using the digital PWM pins to somehow control the dimmer.
 
 ### Using 2.:
+- Use a photoresistor as a light intensity sensor.
+- Read the analog value obtained from photoresistor using Analog pins of Arduino.
+- Use the prototype code from "Light_sensor.ino".
