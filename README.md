@@ -43,12 +43,15 @@ This repo is for PCB development
 - Instead of arduino, ESP32 can also be used. However make sure that the relay is powered accordingly from 5V source and check before applying the Mains supply.
 - Upload the code from "Relay.ino"
 
-## LED dimmer (Under progress, do not use)
+## LED dimmer
 - Two options -
     1. Using a 555 timer IC to generate a square wave along with a potentiometer that will vary the duty cycle (PWM). However, requires manual setting.
-    2. Using the digital PWM pins to somehow control the dimmer.
+    2. Using the digital PWM pins to control the dimmer.
 
 ### Using 2.:
 - Use a photoresistor as a light intensity sensor.
+- Connect the photoresistor, diode and transistor BC547 as shown in the image below.
+![alt text](Image/Light_sensor.jpg)
 - Read the analog value obtained from photoresistor using Analog pins of Arduino.
-- Use the prototype code from "Light_sensor.ino".
+- Use the code from "Light_sensor.ino".
+- ### Carefully check the entire circuit befor turning on the 12V supply.
