@@ -1,9 +1,8 @@
 //  This is a prototype code which uses a photoresistor as a light sensor. Currently the code is supported for a very small LED (<5V).
 const int sensorPin = A0;   // Reads the analog value of the photoresistor
-
 const int ledPin = 9;   // Digital PWM pin
 
-int sensorValue;
+int sensorValue = 0;
 
 int threshold = 500;    // Threshold value below which LED brightens
 
